@@ -27,13 +27,11 @@ img {
     font-weight: 100%;
     color: black;
 }
-.social, li {
-    display: flexbox;
-    text-transform: -9999px;
-    align-items: center;
-}
 
 .nav-item {
     text-align:center;
+}
+.ol {
+    color: black;
 }
 
