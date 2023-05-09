@@ -34,4 +34,7 @@ img {
 .ol {
     color: black;
 }
+.containerFooter {
+    display:flex;
+}
 
