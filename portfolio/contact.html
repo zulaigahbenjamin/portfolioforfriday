@@ -24,7 +24,9 @@
 
         .bgimage {
             background-image: url(/Assets/windows-C6T6vr1sQI0-unsplash.jpg);
-            height: 100vh;
+            margin:auto;
+            height:100vh;
+           background-size:cover;
         }
 
         .content-wrap {
@@ -33,11 +35,17 @@
         }
 
         .img {
-            height: 50%;
+            height: 100%;
         }
 
         .containerFooter {
             display: flex;
+        }
+        .ul {
+            vertical-align: middle;
+        }
+        .containerFooter {
+            display:flex;
         }
     </style>
 </head>
@@ -93,7 +101,7 @@
                                     <h3 class="mb-4">Get In Touch With Me</h3>
                                     <div id="for message-warning" class="mb-4"></div>
                                     <div id="form-message-success" class="mb-4">Your message was sent thank you !</div>
-                                    <form method="POST" id="contactForm" name="cootactForm" class="contactForm"
+                                    <form  action="https://formspree.io/f/mayzkyqg" method="post" id="contactForm" name="cootactForm" class="contactForm"
                                         novalidate="novalidate">
                                         <div class="row">
                                             <div class="col-md-6">
@@ -124,6 +132,7 @@
                                                     <textarea name="message" class="form-control" id="message" cols="30"
                                                         rows="4" placeholder="Enter Your Message Here">
                                                     </textarea>
+                                                    <button type="submit">Submit</button>
                                                 </div>
                                             </div>
 
@@ -142,12 +151,11 @@
 <!-- footer -->
 <footer class="pt-3 mt-4 text-body-secondary border-top">
     &copy; 2023
-    <div class="containerFooter">
+    <div class="containerFooter" style="display: flex;">
         <ul>
             <ol>
                 <a href="https://twitter.com/login"><img src="/Assets/twitter.png">
                 </a>
-                <p>Twitter</p>
             </ol>
             <ol>
                 <a href="https://www.instagram.com/itszuubenjamin/">
@@ -163,10 +171,6 @@
                 </a>
             </ol>
         </ul>
-
-
-
-
     </div>
 </footer>
 

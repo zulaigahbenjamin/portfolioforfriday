@@ -21,6 +21,43 @@
         .containerFooter {
             display: flex;
         }
+
+        .h5,
+        .p {
+            color: black;
+            text-transform: unset;
+        }
+
+        .headings {
+            text-align: center;
+            padding-top: 100px;
+            padding-bottom: 50px;
+        }
+
+        .test-img {
+            object-fit: contain;
+            max-height: 450px;
+            max-width: 450px;
+            margin: auto;
+            height: auto;
+            padding-top: 10px;
+            padding-bottom: 190px;
+        }
+
+        .text {
+            color: black;
+            margin: auto;
+        }
+
+        .carousel-item {
+            background-color: rgb(240, 236, 236);
+
+        }
+        .h2 {
+             color:black;
+        }
+           
+        
     </style>
 </header>
 <nav class="nav navbar-dark bg-dark navbar-expand-lg fixed-top navbarScroll" style="display:block">
@@ -46,39 +83,123 @@
                 <li class="nav-item">
                     <a class="nav-link" href="/portfolio/testimonials.html">Testimonials</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/portfolio/contact.html">Contact</a>
+                </li>
 
             </ul>
         </div>
     </div>
 </nav>
 
+
 <body>
+    <div class="bg">
+        <h5 class="headings">Testimonials</h5>
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="/Assets/Waydin Jochem C12 C1 25Apr23 (2).JPG"
+                        class="test-img  d-block w-90 d-flex justify-content-center mask">
+                    <div class="carousel-caption d-none d-md-block">
+                        <div class="container3">
+                            <h2>Waydin Jochem</h2>
+                            <p class="text fw-bold ">"Zulaigah is an observative individual, who is often quiet but
+                                readily available when asked for help. She is incredibly passionate about presenting the
+                                best work that she can. She usually doesn't start a conversation but is always willing
+                                to lend an ear if her colleagues need to talk."</p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="container2">
+                    <div class="carousel-item">
+                        <img src="/Assets/C12 Ayesha Galant Class1 (1).JPG" class=" test-img d-block w-90"
+                            alt="picture">
+                        <div class="carousel-caption d-none d-flex d-md-block">
+                            <div class=" container3">
+                                <h2>Ayesha Galant</h2>
+                                <p class="text fw-bold">"Zulaigah is dedicated and
+                                    very passionate about her work. Working
+                                    together
+                                    makes me
+                                    motivated to go above and beyond to reach our goals and of course, having fun while
+                                    doing
+                                    so."
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/Assets/C12 Abdoelmaaliek Samaai (1).JPG"
+                            class="test-img  d-block w-90 d-flex justify-content-center mask">
+                        <div class="carousel-caption d-none d-md-block">
+                            <div class="container3">
+                                <h2>Abdoel Samaai</h2>
+                                <p class="text fw-bold ">"Zulaigah Benjamin is a
+                                    very
+                                    quiet and friendly person. She is a
+                                    fast
+                                    learner and is easy to talk to. She is not a person to make conversation first. She
+                                    is
+                                    also
+                                    kind hearted and is a good person to have as a friend.she knows what she want and is
+                                    focus"
+                                </p>
+                            </div>
 
-    <!-- footer -->
-    <footer class="pt-3 mt-4 text-body-secondary border-top">
-        &copy; 2023
-        <div class="containerFooter">
-            <ol>
-                <a href="https://twitter.com/login"><img src="/Assets/twitter.png">
-                </a>
-            </ol>
-            <ol>
-                <a href="https://www.instagram.com/itszuubenjamin/">
-                    <img src="/Assets/innstagramsss.png">
-                </a>
-            </ol>
-            <ol>
-                <a href="https://www.facebook.com/zuzubenjamin/"><img src="/Assets/FB.png">
-                </a>
-            </ol>
-            <ol>
-                <a href="https://www.linkedin.com/"><img src="/Assets/linkedin.png">
-                </a>
-            </ol>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
 
 
-        </div>
-    </footer>
+
+
+
 </body>
+<!-- footer -->
+<footer class="pt-3 mt-4 text-body-secondary border-top">
+    &copy; 2023Copyright
+    <div class="containerFooter">
+        <ol>
+            <a href="https://twitter.com/login"><img src="/Assets/twitter.png">
+            </a>
+        </ol>
+        <ol>
+            <a href="https://www.instagram.com/itszuubenjamin/">
+                <img src="/Assets/innstagramsss.png">
+            </a>
+        </ol>
+        <ol>
+            <a href="https://www.facebook.com/zuzubenjamin/"><img src="/Assets/FB.png">
+            </a>
+        </ol>
+        <ol>
+            <a href="https://www.linkedin.com/"><img src="/Assets/linkedin.png">
+            </a>
+        </ol>
+
+
+    </div>
+</footer>
 
 </html>
