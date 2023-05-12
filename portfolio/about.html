@@ -20,8 +20,75 @@
     cursor: pointer;
   }
 
-  a:hover {
-    color: rgb(239, 219, 219);
+  @import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+  html,
+  body {
+    height: 100%;
+    font-weight: 800;
+    margin: 0;
+
+  }
+
+  body {
+    background: #030321;
+    font-family: Arial;
+  }
+
+  .container {
+    display: flex;
+    /*   border:1px solid red; */
+    height: 100%;
+    align-items: center;
+  }
+
+  svg {
+
+    font: 10.5em 'Montserrat';
+    width: 500px;
+    height: 250px;
+    margin: auto;
+    padding-top: 0px;
+  }
+
+  .text-copy {
+    fill: none;
+    stroke: white;
+    stroke-dasharray: 6% 29%;
+    stroke-width: 5px;
+    stroke-dashoffset: 0%;
+    animation: stroke-offset 5.5s infinite linear;
+  }
+
+  .text-copy:nth-child(1) {
+    stroke: #4D163D;
+    animation-delay: -1;
+  }
+
+  .text-copy:nth-child(2) {
+    stroke: #840037;
+    animation-delay: -2s;
+  }
+
+  .text-copy:nth-child(3) {
+    stroke: #84d6edd2;
+    animation-delay: -3s;
+  }
+
+  .text-copy:nth-child(4) {
+    stroke: #585254;
+    animation-delay: -4s;
+  }
+
+  .text-copy:nth-child(5) {
+    stroke: #c5c5c5;
+    animation-delay: -5s;
+  }
+
+  @keyframes stroke-offset {
+    100% {
+      stroke-dashoffset: -35%;
+    }
   }
 
   .social li {
@@ -32,22 +99,12 @@
     height: auto;
   }
 
-  .hero_title {
-    text-align: center;
-    padding-top: 40%;
-    font-size: x-large;
-    font-weight: 100%;
-  }
-
-  .about {
-    padding-top: 90px;
-  }
 
   .containerFooter {
     display: flex;
   }
 
-  .navbar-nav ms-auto {
+  .navbar-nav {
     text-align: center;
   }
 
@@ -62,33 +119,13 @@
     padding-top: 50px;
     text-decoration: underline;
   }
-
-  .card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    max-width: 300px;
-    margin: auto;
-    text-align: center;
-    font-family: arial;
-    float: left;
-    padding-top: 50px;
-  }
-
   .title {
     color: grey;
     font-size: 18px;
   }
 
-  button {
-    border: none;
-    outline: 0;
-    display: inline-block;
-    padding: 8px;
-    color: white;
-    background-color: #000;
-    text-align: center;
-    cursor: pointer;
-    width: 100%;
-    font-size: 18px;
+  .img-fluid {
+    border: 5px solid #555
   }
 
   a {
@@ -102,10 +139,6 @@
     opacity: 0.7;
   }
 
-  .pt-3 {
-    display: flex;
-    padding: 200px;
-  }
 
   .nav-item {
     text-align: center;
@@ -141,27 +174,24 @@
     color: white;
   }
 
-  .container {
-    width: 100%;
-    padding-right: calc(var(--bs-gutter-x) * 0.5);
-    padding-left: calc(var(--bs-gutter-x) * 0.5);
-    margin-right: auto;
-    margin-left: auto;
+  .bg-light {
+    border: 2px solid #555;
+    padding: 10px;
   }
 
-  .mlk {
+  .container1 {
     text-align: center;
-    color: black;
-    font-size: x-large;
-    padding-top: 10px;
+    padding-bottom
   }
-  .b1 {
-    border-style: solid;
 
-   
-  }
+  .pic {
+  width:400px;
+  height:100vh;
+  padding-top: 60px;
+  margin-block-start: auto;
  
-  
+ }
+ 
 </style>
 <section>
   <!--navigation-->
@@ -177,20 +207,18 @@
       <div class="collapse navbar-collapse justify-content-end hover" id="navbarSupportedContent">
         <ul class="navbar-nav ms-auto" text-align="center">
           <li class="nav-item active">
-            <a class="nav-link" href="/portfolio/home.html">Home</a>
+            <a class="nav-link" href="/index.html">Home</a>
           </li>
           <li class="nav-item ">
             <a class="nav-link" href="/portfolio/about.html">About</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/portfolio/portfolio.html">Portfolio</a>
-          </li>
+
           <li class="nav-item">
             <a class="nav-link" href="/portfolio/testimonials.html">Testimonials</a>
           </li>
           <li clas="nav-item">
-            <a class="nav-link" href="/portfolio/contact.html">Contact</a>
-          </li>7
+            <a class="nav-link" href="/portfolio/contact.html" style="text-align: center;">Contact</a>
+          </li>
         </ul>
       </div>
     </div>
@@ -200,74 +228,160 @@
 <body>
   <!--about section-->
   <section id="about" class="about-mf sect-pt4 routeeg" style="padding-top: 4rem">
-    <h3 class="mlk">About Me</h3>
-    <div class="container pt-5">
-      <div class="row">
-        <div class="col-lg-12">
-          <div class="box-shadow-full">
-            <div class="row">
-              <div class="col-md-7">
-                <div class="row">
-                  <div class="col-sm-5 col-md-4">
-                    <div class="about-img">
-                      <img src="/Assets/IMG_2409.JPG" class="img-fluid img-fluid b-shadow-a border-left-0" />
-                    </div>
-                  </div>
-                  <div class=" b1 col-sm-5 col-md-6 m-auto">
-                    <div class="about-info">
-                      <p>
-                        <span class="title-s">Name: </span>
-                        <span>Zulaigah Benjamin</span>
-                      </p>
-                      <p>
-                        <span class="titles-s">Profile:</span>
-                        <span>Aspiring Web Developer</span>
-                      </p>
-                      <p>
-                        <span class="title-s">Email:</span>
-                        <span>zulaigahbenjamin01@gmail.com</span>
-                      </p>
-                      <p>
-                        <span class="title-s">Phone:</span>
-                        <span>074352720</span>
-                      </p>
-                    </div>
-                  </div>
-                  <div class="border pt-4">
-                  <div class="b1">
-                    <p  style="padding-top: 20px;">
-                      Hello World! Im an Aspiring Web developer based is
-                      Mitchells Plain, Cape Town.I went from wanted to study
-                      Nursing to please my parents to having a big interrest
-                      in coding. I love combining the world og logic and
-                      creative design to make eye-catching accesible and
-                      user-friendly websites or applications.
-                    </p>
-                    <p>
-                      Technology leads, society follows.The move towrads
-                      increasing inclusivity and diversity in the industry
-                      through representation. It is important of importance to
-                      me.
-                    </p>
-                    <p>
-                      I'm extreamly excited to make the leap and keep refining
-                      my skills with the right company. Drop me a line and or
-                      your favourite restuarant in Cape Town in the contact
-                      form or check me out on my socials.
-                    </p>
-                    <div >
-                      <div class="text-info h4">Why work with me ?</div>
-                      <h3>Analytical</h3>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+
+
+    <div class="container1">
+      <svg viewBox="0 0 960 300">
+        <symbol id="s-text">
+          <text text-anchor="middle" x="40%" y="40%">About Me</text>
+        </symbol>
+
+        <g class="g-ants">
+          <use xlink:href="#s-text" class="text-copy"></use>
+          <use xlink:href="#s-text" class="text-copy"></use>
+          <use xlink:href="#s-text" class="text-copy"></use>
+          <use xlink:href="#s-text" class="text-copy"></use>
+          <use xlink:href="#s-text" class="text-copy"></use>
+        </g>
+      </svg>
     </div>
-  </section>
+  <section class="bg-light" id="about">
+    <div class="container">
+            <div class="about-head text-center">
+              <br/>
+    
+              <hr/>
+            </div>
+            <div class="row justify-content-evenly">
+              <div class="col-lg-4 col-md-12 col-12">
+                <img src="/Assets/IMG_2409.JPG" class="pic">
+              </div>
+              <div class="col-lg-7 col-md-12 col-12">
+                <h3>Get to know me</h3>
+                <hr />
+                <div class="bg-light">
+                  <dl class="row">
+                    <dt class="col-sm-3">Full Name:</dt>
+                    <dd class="col-sm-9">Zulaigah</dd>
+                    <dt class="col-sm-3">Date Of Birth:</dt>
+                    <dd class="col-sm-9">10 May 2003</dd>
+                    <dt class="col-sm-3">Address:</dt>
+                    <dd class="col-sm-9">5 Hyacinth Street,Lentegeur,Mitchells Plain</dd>
+                    <dt class="col-sm-3 text-truncate">Contact Information:</dt>
+                    <dd class="col-sm-9">
+                      <p>zulaigahbenjamin01@gmail.com</p>
+                    </dd>
+                    <dt class="col-sm-3 text-truncate">Willing to relocate:</dt>
+                    <dd class="col-sm-9">Yes</dd>
+                    <div class="bi">
+                    <dt class="col-sm-3 text-truncate">Bio:</dt>
+                    <dd class="col-sm-9">
+                      
+                      <p>
+                        Hello World! Im an Aspiring Web developer based is
+                        Mitchells Plain, Cape Town.I went from wanted to study
+                        Nursing to please my parents to having a big interrest
+                        in coding. I love combining the world og logic and
+                        creative design to make eye-catching accesible and
+                        user-friendly websites or applications.
+                      </p>
+                      <p>
+                        Technology leads, society follows.The move towrads
+                        increasing inclusivity and diversity in the industry
+                        through representation. It is important of importance to
+                        me.
+                      </p>
+                      <p>
+                         I'm extreamly excited to make the leap and keep refining
+                          my skills with the right company. Drop me a line and or
+                          your favourite restuarant in Cape Town in the contact
+                          form or check me out on my socials
+                      </p>
+                    </dd>
+                    </div>
+                    <dt class="col-sm-3">Hobbies:</dt>
+                    <dd class="col-sm-9">
+                      <p>
+                        
+                      </p>
+                    </dd>
+                    <dt class="col-sm-3">Skills & Competencies:</dt>
+                    <dd class="col-sm-9">
+                      <div class="d-flex justify-content-around">
+                          <div class="row">
+                              <div class="col-lg-6 col-md-6 col-12">
+                                  <h6>Soft Skills:</h6>
+                                  <ul>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                  </ul>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-12">
+                                  <h6>Technical Skills:</h6>
+                                  <ul>
+                                    <li>Computer Literacy</li>
+                                    <li>Web Development</li>
+                                    <li>Microsoft Office</li>
+                                    <li>Microsoft Word</li>
+                                  </ul>
+                                </div>
+                          </div>
+                        <div class="row">
+                          <div>
+                              <i class="fa-brands fa-html5" style="color: #9cdde9"></i>
+                              <div class="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                                  <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 75%">75%</div>
+                                </div>
+                          </div>
+                          <div>
+                              <i class="fa-brands fa-css3" style="color: #469095"></i>
+                              <div class="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">
+                                  <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 65%">65%</div>
+                                </div>
+                          </div>
+                          <div>
+                              <i class="fa-brands fa-bootstrap" style="color: #82c0c0"></i>
+                              <div class="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100">
+                                  <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 45%">45%</div>
+                                </div>
+                          </div>
+                        </div>
+                      </div>
+                    </dd>
+                    <dt class="col-sm-3">Educational Background:</dt>
+                    <dd class="col-sm-9">
+                      <div class="d-flex justify-content-around">
+                         <div class="row">
+                          <div class="col-lg-6 col-md-6">
+                            <h6>High School:</h6>
+                            <p>
+                              Matric: Diploma<br />Darul Arqam Islamic High School<br />Years:
+                              2017-2021
+                            </p>
+                          </div>
+                          <div class="col-lg-6 col-md-6">
+                            <h6>Tertiary Education:</h6>
+                            <p>
+                              Name of course: Software Development<br />Institution:
+                              Life Choices Academy<br />Years:2023-Present
+                            </p>
+                          </div>
+                         </div>
+                          </div>
+                        </div>
+                      </div>
+                    </dd>
+                  </dl>
+               
+                </div>
+                </div>
+            </div>
+          </d>
+    </div>
+</section>
 </body>
 
 <!--FOOTER-->

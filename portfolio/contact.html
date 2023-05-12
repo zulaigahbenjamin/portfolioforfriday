@@ -15,6 +15,8 @@
         crossorigin="anonymous"></script>
     <title>My Portfolio</title>
     <style>
+        @import url("https://fonts.googleapis.com/css?family=Luckiest+Guy");
+
         .row {
             display: flex;
             flex-wrap: wrap;
@@ -24,9 +26,10 @@
 
         .bgimage {
             background-image: url(/Assets/windows-C6T6vr1sQI0-unsplash.jpg);
-            margin:auto;
-            height:100vh;
-           background-size:cover;
+            margin: auto;
+            height: 100vh;
+            background-size: cover;
+            padding-bottom:10px;
         }
 
         .content-wrap {
@@ -38,14 +41,88 @@
             height: 100%;
         }
 
-        .containerFooter {
-            display: flex;
-        }
         .ul {
             vertical-align: middle;
         }
+
         .containerFooter {
-            display:flex;
+            display: flex;
+        }
+
+        .nav-item {
+            text-align: center;
+        }
+
+        @import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+        html,
+        body {
+            height: 100%;
+            font-weight: 800;
+            margin: 0;
+
+        }
+
+        body {
+            background: #030321;
+            font-family: Arial;
+        }
+
+        .container {
+            display: flex;
+            /*   border:1px solid red; */
+            height: 40%;
+            align-items: center;
+            
+        }
+
+        svg {
+
+            font: 10.5em 'Montserrat';
+            width: 500px;
+            height: 250px;
+            margin: auto;
+            padding-top: 0px;
+        }
+
+        .text-copy {
+            fill: none;
+            stroke: white;
+            stroke-dasharray: 6% 29%;
+            stroke-width: 5px;
+            stroke-dashoffset: 0%;
+            animation: stroke-offset 5.5s infinite linear;
+        }
+
+        .text-copy:nth-child(1) {
+            stroke: #4D163D;
+            animation-delay: -1;
+        }
+
+        .text-copy:nth-child(2) {
+            stroke: #840037;
+            animation-delay: -2s;
+        }
+
+        .text-copy:nth-child(3) {
+            stroke: #84d6edd2;
+            animation-delay: -3s;
+        }
+
+        .text-copy:nth-child(4) {
+            stroke: #585254;
+            animation-delay: -4s;
+        }
+
+        .text-copy:nth-child(5) {
+            stroke: #c5c5c5;
+            animation-delay: -5s;
+        }
+
+        @keyframes stroke-offset {
+            100% {
+                stroke-dashoffset: -35%;
+            }
         }
     </style>
 </head>
@@ -63,13 +140,10 @@
         <div class="collapse navbar-collapse justify-content-end hover" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto" text-align="center">
                 <li class="nav-item">
-                    <a class="nav-link" href="./home.html">Home</a>
+                    <a class="nav-link" href="/index.html">Home</a>
                 </li>
                 <li class="nav-item ">
                     <a class="nav-link" href="/portfolio/about.html">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/portfolio/portfolio.html">Portfolio</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="/portfolio/testimonials.html">Testimonials</a>
@@ -84,12 +158,25 @@
 </nav>
 
 <body>
-    <section class="bgimage" style="background-color: grey;">
+    <section class="bgimage lazy" style="background-color: grey;" data-src="image-to-lazy-load.jpg">
+        <div class="col-md-6 text-center mb-5">
+            <svg viewBox="0 0 960 300">
+                <symbol id="s-text">
+                    <text text-anchor="middle" x="50%" y="80%">CONTACT</text>
+                </symbol>
+
+                <g class="g-ants">
+                    <use xlink:href="#s-text" class="text-copy"></use>
+                    <use xlink:href="#s-text" class="text-copy"></use>
+                    <use xlink:href="#s-text" class="text-copy"></use>
+                    <use xlink:href="#s-text" class="text-copy"></use>
+                    <use xlink:href="#s-text" class="text-copy"></use>
+                </g>
+            </svg>
+        </div>
         <div class="container">
             <div class="row justify-content-center">
-                <div class="col-md-6 text-center mb-5">
-                    <h2 class="heading-section">Contact Me</h2>
-                </div>
+
             </div>
             <div class="row justify-content-center">
                 <div class="col-lg-10">
@@ -98,11 +185,13 @@
                             <div class="col-md-9 col-lg-7">
                                 <div class="content-wrap w-100 p-md-5 p-4"
                                     style="background-color: rgb(209, 202, 202);">
-                                    <h3 class="mb-4">Get In Touch With Me</h3>
+                                    <h3 class="mb-4">
+
+                                    </h3>
                                     <div id="for message-warning" class="mb-4"></div>
                                     <div id="form-message-success" class="mb-4">Your message was sent thank you !</div>
-                                    <form  action="https://formspree.io/f/mayzkyqg" method="post" id="contactForm" name="cootactForm" class="contactForm"
-                                        novalidate="novalidate">
+                                    <form action="https://formspree.io/f/mayzkyqg" method="post" id="contactForm"
+                                        name="cootactForm" class="contactForm" novalidate="novalidate">
                                         <div class="row">
                                             <div class="col-md-6">
                                                 <div class="form-group">
@@ -151,7 +240,7 @@
 <!-- footer -->
 <footer class="pt-3 mt-4 text-body-secondary border-top">
     &copy; 2023
-    <div class="containerFooter" style="display: flex;">
+    <div class="containerFooter">
         <ul>
             <ol>
                 <a href="https://twitter.com/login"><img src="/Assets/twitter.png">
